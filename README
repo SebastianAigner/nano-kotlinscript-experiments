@@ -1,0 +1,14 @@
+Small experiments with building small request-response handlers with Kotlin scripting. Super unfinished, not in any way safe, unsupported and with only questionable usefulness.
+
+Put on your adventurer hat, all expeditions happen at your own risk ☢️
+
+To try:
+```
+curl -X POST \
+  http://localhost:8080/service/reverser \
+  -H 'Content-Type: application/json' \
+  -H 'cache-control: no-cache' \
+  -d '{
+	"textToReverse": "yellow"
+}'
+```
